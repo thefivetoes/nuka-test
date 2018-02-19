@@ -9,7 +9,7 @@ class App extends Component {
   renderTodo = ({ label, onClick }) => {
     return (
       <div key={`todo-${label.replace(/\W/g, "-")}`} onClick={onClick}>
-        <div>
+        <div style={{padding: 100, border: "1px solid #0f0"}}>
           hello
         </div>
         <div>{label}</div>
